@@ -4,8 +4,10 @@
 }
 #title {
   color: blue;
-
 }
-p {
+.container p {
   color: grey;
 }
+/* div {
+  margin-bottom: 1.5rem;
+} */
