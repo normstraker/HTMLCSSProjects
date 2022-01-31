@@ -1,0 +1,15 @@
+/* remember that the font import instructions must be at the top of your code */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Quintessential&display=swap');
+
+/* system fonts - are font families that are already on the system you are working on - your project will look different on other systems ie. macOS */
+
+body{
+  font-family: 'Comforter', cursive;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+h1, h2{
+  font-family: 'Quintessential', cursive;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
