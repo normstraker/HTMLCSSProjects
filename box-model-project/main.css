@@ -1,0 +1,69 @@
+:root {
+  /* colors */
+  --light-grey: #f1f5f9;
+  --white: #fff;
+  --light-pink: #ffe8f1;
+  --dark-pink: #ff69a6;
+  --light-blue: #ecf4ff;
+  --dark-blue: #68a3ff;
+  --text: #64748b;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--light-grey);
+}
+.card{
+  background: var(--white);
+  padding: 1.5rem 2rem; 
+  text-align: center;
+  max-width: 300px;
+  /* sets the card with 3rem(48px) top and bottom and auto adjusts the side margins to keep the card in the center of the screen */
+  margin: 3rem auto;
+  border-radius: .5rem;
+  border: .0625rem solid;
+  }
+.card-1{
+  border-color: var(--dark-pink);
+}
+.card-2{
+  border-color: var(--dark-blue);
+}
+.icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  background: black;
+  border-radius: 50%;
+  /* works like the margin for the .card, without the margin designated if aligns to the left */
+  margin: 0 auto;
+}
+/* using card-1 as the parent of .icon, its not necessary to set a specific class for the individual icons, since their is only one icon class under card-1 or card-2 */
+.card-1 .icon{
+  background: var(--dark-pink);
+}
+.card-2 .icon{
+  background: var(--dark-blue);
+}
+.title{
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+}
+.text{
+  /* line-height is a value of itself if nothing is added to (ex. 1.5) */
+  line-height: 1.5;
+  color: var(--text);
+}
+.btn{
+  text-transform: capitalize;
+  border: transparent;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  letter-spacing: .2rem;
+}
+.btn-pink{
+  background: var(--light-pink);
+  color: var(--dark-pink);
+}
+.btn-blue{
+  background: var(--light-blue);
+  color: var(--dark-blue);
+}
