@@ -306,11 +306,17 @@ nav {
 
 .links {
   margin: 0;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
   /* todo height overflow transition */
   /* get height (160px or 10rem) from dev tools*/
 }
 
-/* todo .show-links */
+.show-links {
+  /* if a link is added then the height must be changed to work with app.js */
+  height: 10rem;
+}
 
 /* takes effect when screen expands to 800px or larger (reaches a minimum width of) */
 @media screen and (min-width: 800px) {
@@ -330,8 +336,8 @@ nav {
     padding: 0;
   }
   .links {
+    height: auto;
     display: flex;
-    /* todo height */
   }
   .links a {
     padding: 0;
