@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
 }
 .nav {
@@ -21,7 +22,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #fff;
-  letter-spacing: .08rem;
+  letter-spacing: 0.08rem;
   /* letter-spacing: 2px; */
 }
 .nav-center {
@@ -33,14 +34,19 @@ body {
   padding: 0 2rem; */
 }
 .hero {
-    min-height: calc(100vh - 5rem);
-    background: #502904;
-    position: relative;
-  }
+  min-height: calc(100vh - 5rem);
+  background: #502904;
+  position: relative;
+}
 @media screen and (min-width: 768px) {
   .hero {
     /* make note of the center/cover after the image url */
-    background: linear-gradient(to right, rgba(182, 180, 180, 0.1),rgb(80, 41, 4)), url("./hero-bcg.jpg") center/cover;
+    background: linear-gradient(
+        to right,
+        rgba(182, 180, 180, 0.1),
+        rgb(80, 41, 4)
+      ),
+      url("./hero-bcg.jpg") center/cover;
   }
 }
 .hero-center {
@@ -50,7 +56,7 @@ body {
   /* padding doesn't accept auto */
   padding: 5rem 0;
   color: #fff;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -58,19 +64,18 @@ body {
   text-align: center;
 }
 .hero-center h1 {
-  letter-spacing: .08rem;
+  letter-spacing: 0.08rem;
   text-transform: capitalize;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 .hero-btn {
   background: transparent;
   border: 1px solid #fff;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: .12rem;
+  letter-spacing: 0.12rem;
   animation: slideFromBottom 5s ease-in-out 1;
-
 }
 .hero-center p {
   /* em depends on the parent */
